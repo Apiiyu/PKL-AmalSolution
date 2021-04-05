@@ -1,0 +1,4 @@
+Untuk membuat file hasil compile file pug. kita bisa melakukannya dengan melakukan perintah berikut
+
+1. Open terminal yang directorynya sudah ada di folder project pug
+2. Tulis pug -w ./ -o ./folderFileCompile -P

@@ -1,0 +1,24 @@
+doctype html 
+html    
+    head 
+    body
+        //- Add an attribute or property on PUG
+        
+        input.password(type="password" name="password" data-js=`${ 5 > 2 ? "Ok" : "Not OK" }`)
+
+        - const myClasses = ["class1", "class2", "class3"]
+        div(class=myClasses)
+
+        - const myStyles = {"color": "red", "background-color": "blue"}
+        div(style=myStyles)
+
+        - const myAttributes = {"src": "myPhoto.png", "alt": "This is myFoto"}
+        img&attributes(myAttributes) 
+
+        img(src="text.png" alt="foto")   
+
+        input(type="text" disabled)
+
+
+        
+

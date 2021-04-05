@@ -1,0 +1,26 @@
+//- Each Loop is same as the For Loop Except that the for loops is different name
+
+doctype html
+html 
+    head 
+    body 
+        h1 For/Each Loop
+        - const names = ["Dom", "Sophie", "Mark"];
+        - const grades = {"Web Dev": 85, "Dev Ops": 90}
+
+        each o, l in names
+            p= o + " - " + l
+
+        each a, b in grades 
+            p= a + " - " + b
+
+        for n, i in []
+            p= n + " - " + i
+        else 
+            strong No Values are here!
+
+<!---- Each loop akan melakukan looping sebanyak data yang ada didalam in
+    Maka jika data yang berada didalam in adalah array yang memiliki 5 buah nilai,
+    Maka each akan melakukan looping sebanyak 5 kali. 
+    asumsi ini adalah asumsi saya pribadi -->
+    
