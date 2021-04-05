@@ -1,0 +1,7 @@
+# Materi 1 
+Database Methods
+  a. db.dropDatbase()   => Untuk menghapus database
+  b. db.getName() 	=> Untuk mengambil nama database
+  c. db.hostInfo() 	=> Untuk mengambil informasi host tempat mongodb
+  d. db.version() 	=> Untuk Mengambil versi database
+  e. db.stats() 	=> Untuk Mengambil statistik penggunaan database

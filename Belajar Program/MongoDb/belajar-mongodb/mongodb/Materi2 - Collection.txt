@@ -1,0 +1,19 @@
+# Materi Collection
+
+Collection adalah tempat menyimpan document
+Maximum per document yang bisa disimpan adalah 16MB
+Maximum level nested document yang bisa disimpan adalah 100level
+
+Database Methods Untuk Collection
+  a. db.getCollectionNames() 	=> Untuk mengambil semua nama collection
+  b. db.createCollection(name)  	=> Untuk membuat collection baru
+  c. db.getCollection(name) 		=> Untuk mendapatkan Object Collection
+  d. db.<name> 			=> Untuk mendapatkan Object collection
+  e. db.getCollectionInfos()		=> Untuk mendapatkan semua informasi collection
+
+Collection Methods
+  a. db.<collection>.find() 		=> Untuk mengambil semua document
+  b. db.<collection>.count()		=> Untuk mengambil jumlah document
+  c. db.<collection>.drop()		=> Untuk menghapus collection
+  d. db.<collection>.totalSize() 	=> Untuk mengambil total ukuran Collection
+  e. db.<collection>.stats() 		=> Untuk mengambil informasi statistik Collection
