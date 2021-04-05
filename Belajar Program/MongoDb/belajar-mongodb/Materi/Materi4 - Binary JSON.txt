@@ -1,0 +1,18 @@
+# Materi BSON 
+   1. BSON singkatan dari Binary JSON yaitu binary encoded serialization dokumen seperti JSON
+  2. Sama seperti JSON, di BSON juga kita bisa menggunakan embedded object, array dan lain-lain
+
+Object Id
+   1. ObjectId adalah random data yang unik, cepat untuk digenerate dan terurut
+  2. Nilai ObjectId memiliki ukuran panjang 12 byte, konsisten terdiri dari informasi 4 byte timestamp,
+      5 byte random value, dan 3 byte incrementing counter
+  3. ObjectId digunakan sebagai default_id (primary key) di document jika kita tidak secara eksplisit
+      Menyebutkan _id document nya  
+
+Date dan ISODate
+   1. BSON Date adalah 64 bit integer yang merepresentasikan angka milisecond sejak Unix epoch
+     (1 Januari 1970)
+  2. Nilai ini bisa merepresentasikan waktu dengan jarak 290 juta tahun sebelum dan setelah unix 
+      epoch.
+  3. ISODDate merupakan represntasi waktu yang digunakan oleh MongoDB
+  4. Date ini kompatibel dengan Date di JavaScript

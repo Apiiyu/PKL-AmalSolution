@@ -1,0 +1,34 @@
+Kenapa perlu mengerti data modeling?
+  1. Pindah dari relational database ke document database bukanlah hal yang sesederhana hanya 
+     dengan memindahkan semua table ke collection
+  2. Penggunaan document database tidak akan mendatangkan manfaat besar jika kita tidak mengerti
+      cara memodelkan data untuk kebutuhan aplikasi kita
+  3. Saat memodelkan data menggunakan relational database, biasanya kita mengacu ke database
+      normalization
+  4. Saat memodelkan data menggunakan document database, kita harus mengacu ke penggunaan
+      aplikasi dalam melakukan query, update, dan memproses data
+
+Schema yang Flexible 
+  1. Tidak seperti di relational database, di MogoDB kita bisa memasukkan data ke collection secara
+     langsung tanpa mendefinisikan schema collection nya.
+  2. Schema untuk collection di MongoDB sangan flexible, tiap document bisa berbeda. Tidak seperti
+      Table di relational database yang harus sama tiap record
+  3. Namun pada prakteknya, sangat direkomendasikan menggunakan jenis data yang sama untuk
+      Setiap collection, walaupun bisa berbeda-beda di collection yang sama.
+
+Primary Key
+  1. Saat membuat dokumen di MongoDB, kita wajib menambahkan primary key
+  2. Tidak seperti relational database yang bebas membuat column untuk primary key, di MongoDB,
+      primary key wajib menggunakan field_id
+  3. Selain itu primary key tidak bisa lebih dari 1 field, hanya bisa field_id, jadi jika kita ingin membuat 
+      composite primary key,, maka kita hanya bisa melakukan dengan menggunakan 1 field_id
+
+Struktur Dokumen - Embedded
+{
+     _id	      :  <ObjectId1>,
+    username :  "123xyz",
+    contact     : { 
+	          phone : "+62821-5684-9874",       
+	          email   : "example@gmail.com"
+	       }
+}

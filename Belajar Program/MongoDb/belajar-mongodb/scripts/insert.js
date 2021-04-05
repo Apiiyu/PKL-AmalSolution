@@ -1,20 +1,20 @@
-// Insert document customers
-db.customers.insertOne({
-    _id: "khannedy",
-    name: "Eko Kurniawan Khannedy"
+// Insert document ke collection products
+db.products.insertOne({
+    _id: "Snacks",
+    name: "Chitato"
 });
 
 // Insert document products
-db.products.insertMany([
+db.customers.insertMany([
     {
         _id: 1,
-        name: "Indomie Ayam Bawang",
-        price: new NumberLong(2000)
+        name: "Budi setiawan",
+        age: 20 
     },
     {
         _id: 2,
-        name: "Mie Sedap",
-        price: new NumberLong(2000)
+        name: "Hendra Aditiya",
+        age: 30
     }
 ]);
 

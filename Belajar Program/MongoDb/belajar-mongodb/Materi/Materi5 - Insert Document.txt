@@ -1,0 +1,13 @@
+# Materi Ke-5 Insert Document
+
+Insert Document
+   1. Untuk menyimpan data ke MongoDB, kita perlu membuat document dalam bentuk JSON
+  2. Field _id tidak wajib dimasukkan, jika kita tidak memasukan field _id maka secara otomatis 
+      MongoDB akan membuat _id baru secara random dengan tipe data ObjectId
+  3. Atau kita juga bisa secara eksplisit membuat ObjectId baru dengan menggunakan perintah 
+      "new ObjectId()"
+
+Insert Document Function
+   1. db.<collection>.insertOne(document) 		=> Untuk menambah dokumen ke collection
+  2. db.<collection>.insertMany(array<document>)	=> Menambah semua dokumen di array ke collection
+  3. db.<collection>.insert(document/array) 		=> Menambah satu document atau banyak document
