@@ -1,0 +1,24 @@
+# Materi ke-7 Comparison Query Operator
+
+Comparison Operator
+   Operator 	Keterangan
+   1. $eq	       =>	Membandingkan value dengan value lain
+  2. $gt 	       => 	Membandingkan value lebih besar dari value lain
+  3. $gte 	       => 	Membandingkan value lebih besar atau sama dengan value lain
+  4. $lt 	       => 	Membandingkan value lebih kecil dari value lain
+  5. $lte 	       => 	Membandingkan value lebih kecil atau sama dengan value lain
+  6. $in 	       => 	Membandingkan value dengan value yang ada di array
+  7. $nin 	       => 	Membandingkan value tidak ada dalam value yang ada di array
+  8. $ne 	       => 	Membandingkan value tidak sama dengan value lain
+
+Syntax Comparison Operator
+   Disini kita mempunyai collection sellers, customers, products, dan orders
+
+db.customers.find({
+     namaField: {
+         $operatorYangDigunakan : "value"
+     }
+})
+
+Sebagai Contoh didalam collection products kita mempunyai field category
+Maka syntaxnya db.products.find({ category { $eq : "Snacks" } })

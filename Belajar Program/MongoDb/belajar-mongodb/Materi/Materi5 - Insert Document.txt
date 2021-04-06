@@ -8,6 +8,7 @@ Insert Document
       "new ObjectId()"
 
 Insert Document Function
-   1. db.<collection>.insertOne(document) 		=> Untuk menambah dokumen ke collection
-  2. db.<collection>.insertMany(array<document>)	=> Menambah semua dokumen di array ke collection
-  3. db.<collection>.insert(document/array) 		=> Menambah satu document atau banyak document
+   1. db.<collection>.insertOne(document) 	   => Untuk menambah dokumen ke collection
+  2. db.<collection>.insertMany(array<document>) => Menambah semua dokumen di array ke collection
+  3. db.<collection>.insert(document/array) 	   => Menambah satu document atau banyak document
+

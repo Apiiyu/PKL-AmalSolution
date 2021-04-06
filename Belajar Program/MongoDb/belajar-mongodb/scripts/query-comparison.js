@@ -40,6 +40,12 @@ db.products.find({
         $in: ["handphone", "laptop"]
     },
     price: {
-        $gt: 5000000
+        $gt: 4000
     }
 });
+
+db.products.find({
+    category: {
+        $in: "Snacks"
+    }
+})
